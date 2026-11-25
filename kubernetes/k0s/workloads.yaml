@@ -1,0 +1,92 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sre-lab
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample
+  namespace: sre-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: sample}
+  template:
+    metadata:
+      labels: {app: sample}
+    spec:
+      containers:
+        - name: sample
+          image: nginx:1.29-alpine
+          resources:
+            requests: {cpu: 10m, memory: 16Mi}
+            limits: {memory: 48Mi}
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample
+  namespace: sre-lab
+spec:
+  selector: {app: sample}
+  ports:
+    - port: 80
+      targetPort: 80
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluent-bit
+  namespace: sre-lab
+data:
+  fluent-bit.conf: |
+    [SERVICE]
+        Flush 5
+        Log_Level warn
+        storage.path /var/log/fluent-bit-k0s-state
+    [INPUT]
+        Name tail
+        Path /var/log/containers/*_sre-lab_sample-*.log
+        Tag lab.sample
+        DB /var/log/fluent-bit-k0s-state/tail.db
+        Mem_Buf_Limit 5MB
+        Skip_Long_Lines On
+        Refresh_Interval 10
+    [OUTPUT]
+        Name loki
+        Match *
+        Host 127.0.0.1
+        Port 13100
+        Labels job=kubernetes,app=sample
+        Retry_Limit False
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluent-bit
+  namespace: sre-lab
+spec:
+  selector:
+    matchLabels: {app: fluent-bit}
+  template:
+    metadata:
+      labels: {app: fluent-bit}
+    spec:
+      hostNetwork: true
+      containers:
+        - name: fluent-bit
+          image: cr.fluentbit.io/fluent/fluent-bit:4.2.2
+          resources:
+            requests: {cpu: 10m, memory: 20Mi}
+            limits: {memory: 80Mi}
+          volumeMounts:
+            - {name: config, mountPath: /fluent-bit/etc/}
+            - {name: varlog, mountPath: /var/log}
+      volumes:
+        - name: config
+          configMap: {name: fluent-bit}
+        - name: varlog
+          hostPath: {path: /var/log}

@@ -1,0 +1,155 @@
+2026-11-24T07:01:44Z
+pid=10201 rss_kib=361192 current_bytes=523952128
+events low 0 high 69 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.32 avg60=0.45 avg300=3.32 total=357464543 full avg10=0.12 avg60=0.36 avg300=1.92 total=203200210
+MemAvailable:306304 SwapTotal:2097148 SwapFree:1870796
+2026-11-24T07:02:14Z
+pid=10201 rss_kib=365152 current_bytes=523665408
+events low 0 high 109 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.05 avg60=0.35 avg300=3.02 total=357572667 full avg10=0.02 avg60=0.25 avg300=1.74 total=203255228
+MemAvailable:309676 SwapTotal:2097148 SwapFree:1870800
+2026-11-24T07:02:44Z
+pid=10201 rss_kib=361528 current_bytes=492720128
+events low 0 high 119 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=1.32 avg60=0.46 avg300=2.75 total=357762912 full avg10=0.00 avg60=0.14 avg300=1.56 total=203285010
+MemAvailable:299704 SwapTotal:2097148 SwapFree:1870188
+2026-11-24T07:03:16Z
+pid=10201 rss_kib=353912 current_bytes=490885120
+events low 0 high 119 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.18 avg60=0.34 avg300=2.50 total=357873054 full avg10=0.12 avg60=0.15 avg300=1.42 total=203393977
+MemAvailable:298744 SwapTotal:2097148 SwapFree:1870196
+2026-11-24T07:03:46Z
+pid=10201 rss_kib=355340 current_bytes=496525312
+events low 0 high 119 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.12 avg60=0.23 avg300=2.26 total=357914289 full avg10=0.00 avg60=0.09 avg300=1.28 total=203399426
+MemAvailable:300152 SwapTotal:2097148 SwapFree:1870196
+2026-11-24T07:04:16Z
+pid=10201 rss_kib=357420 current_bytes=499855360
+events low 0 high 119 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.14 avg300=2.03 total=357924275 full avg10=0.00 avg60=0.05 avg300=1.15 total=203409368
+MemAvailable:311128 SwapTotal:2097148 SwapFree:1870120
+2026-11-24T07:04:46Z
+pid=10201 rss_kib=359728 current_bytes=515686400
+events low 0 high 119 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.08 avg300=1.83 total=357939638 full avg10=0.00 avg60=0.02 avg300=1.03 total=203423922
+MemAvailable:308804 SwapTotal:2097148 SwapFree:1870044
+2026-11-24T07:05:16Z
+pid=10201 rss_kib=360868 current_bytes=524111872
+events low 0 high 126 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.84 avg60=0.26 avg300=1.70 total=358082600 full avg10=0.48 avg60=0.13 avg300=0.95 total=203521791
+MemAvailable:309676 SwapTotal:2097148 SwapFree:1869892
+2026-11-24T07:05:46Z
+pid=10201 rss_kib=357200 current_bytes=523702272
+events low 0 high 185 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.25 avg60=0.40 avg300=1.60 total=358335099 full avg10=0.18 avg60=0.23 avg300=0.90 total=203692169
+MemAvailable:308188 SwapTotal:2097148 SwapFree:1869892
+2026-11-24T07:06:16Z
+pid=10201 rss_kib=358456 current_bytes=523751424
+events low 0 high 191 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.01 avg60=0.24 avg300=1.44 total=358348185 full avg10=0.00 avg60=0.14 avg300=0.81 total=203705058
+MemAvailable:304280 SwapTotal:2097148 SwapFree:1869940
+2026-11-24T07:06:46Z
+pid=10201 rss_kib=366760 current_bytes=523952128
+events low 0 high 234 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.14 avg300=1.29 total=358361655 full avg10=0.00 avg60=0.08 avg300=0.73 total=203718224
+MemAvailable:294520 SwapTotal:2097148 SwapFree:1870148
+2026-11-24T07:07:17Z
+pid=10201 rss_kib=363972 current_bytes=523902976
+events low 0 high 257 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.08 avg300=1.16 total=358383106 full avg10=0.00 avg60=0.04 avg300=0.65 total=203738897
+MemAvailable:292076 SwapTotal:2097148 SwapFree:1870392
+2026-11-24T07:07:47Z
+pid=10201 rss_kib=363620 current_bytes=523882496
+events low 0 high 306 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.02 avg60=0.08 avg300=1.06 total=358445972 full avg10=0.00 avg60=0.02 avg300=0.58 total=203763988
+MemAvailable:298256 SwapTotal:2097148 SwapFree:1870428
+2026-11-24T07:08:17Z
+pid=10201 rss_kib=363756 current_bytes=523628544
+events low 0 high 314 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.05 avg300=0.95 total=358462148 full avg10=0.00 avg60=0.01 avg300=0.52 total=203779764
+MemAvailable:294164 SwapTotal:2097148 SwapFree:1870428
+2026-11-24T07:08:47Z
+pid=10201 rss_kib=356564 current_bytes=518086656
+events low 0 high 314 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.02 avg300=0.85 total=358462820 full avg10=0.00 avg60=0.00 avg300=0.47 total=203780429
+MemAvailable:295100 SwapTotal:2097148 SwapFree:1870444
+2026-11-24T07:09:17Z
+pid=10201 rss_kib=356976 current_bytes=521781248
+events low 0 high 314 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.01 avg300=0.77 total=358472622 full avg10=0.00 avg60=0.00 avg300=0.42 total=203790114
+MemAvailable:302944 SwapTotal:2097148 SwapFree:1870436
+2026-11-24T07:09:47Z
+pid=10201 rss_kib=356084 current_bytes=521879552
+events low 0 high 327 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.00 avg300=0.69 total=358481095 full avg10=0.00 avg60=0.00 avg300=0.37 total=203798512
+MemAvailable:305940 SwapTotal:2097148 SwapFree:1871004
+2026-11-24T07:10:17Z
+pid=10201 rss_kib=356980 current_bytes=523710464
+events low 0 high 340 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.00 avg300=0.62 total=358493716 full avg10=0.00 avg60=0.00 avg300=0.33 total=203810996
+MemAvailable:306000 SwapTotal:2097148 SwapFree:1871020
+2026-11-24T07:10:47Z
+pid=10201 rss_kib=358952 current_bytes=523980800
+events low 0 high 354 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.02 avg60=0.04 avg300=0.56 total=358553738 full avg10=0.00 avg60=0.00 avg300=0.30 total=203830202
+MemAvailable:301096 SwapTotal:2097148 SwapFree:1870436
+2026-11-24T07:11:17Z
+pid=10201 rss_kib=358884 current_bytes=523837440
+events low 0 high 356 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.02 avg300=0.51 total=358556349 full avg10=0.00 avg60=0.00 avg300=0.26 total=203832737
+MemAvailable:302664 SwapTotal:2097148 SwapFree:1870436
+2026-11-24T07:11:47Z
+pid=10201 rss_kib=364124 current_bytes=524103680
+events low 0 high 378 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.16 avg60=0.06 avg300=0.47 total=358626888 full avg10=0.16 avg60=0.05 avg300=0.25 total=203893596
+MemAvailable:303968 SwapTotal:2097148 SwapFree:1870300
+2026-11-24T07:12:17Z
+pid=10201 rss_kib=373300 current_bytes=519753728
+events low 0 high 405 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.03 avg300=0.42 total=358647155 full avg10=0.00 avg60=0.03 avg300=0.22 total=203913841
+MemAvailable:293896 SwapTotal:2097148 SwapFree:1870300
+2026-11-24T07:12:47Z
+pid=10201 rss_kib=374200 current_bytes=523939840
+events low 0 high 406 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.02 avg300=0.37 total=358655889 full avg10=0.00 avg60=0.01 avg300=0.19 total=203922389
+MemAvailable:288544 SwapTotal:2097148 SwapFree:1870300
+2026-11-24T07:13:18Z
+pid=10201 rss_kib=374356 current_bytes=523853824
+events low 0 high 409 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.01 avg300=0.33 total=358659158 full avg10=0.00 avg60=0.00 avg300=0.17 total=203925531
+MemAvailable:288448 SwapTotal:2097148 SwapFree:1870372
+2026-11-24T07:13:48Z
+pid=10201 rss_kib=353412 current_bytes=510144512
+events low 0 high 436 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.00 avg300=0.30 total=358670406 full avg10=0.00 avg60=0.00 avg300=0.15 total=203936363
+MemAvailable:291880 SwapTotal:2097148 SwapFree:1871368
+2026-11-24T07:14:18Z
+pid=10201 rss_kib=355268 current_bytes=521605120
+events low 0 high 436 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.00 avg300=0.26 total=358680478 full avg10=0.00 avg60=0.00 avg300=0.13 total=203946357
+MemAvailable:309552 SwapTotal:2097148 SwapFree:1871368
+2026-11-24T07:14:48Z
+pid=10201 rss_kib=357372 current_bytes=523980800
+events low 0 high 441 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.00 avg60=0.00 avg300=0.23 total=358682848 full avg10=0.00 avg60=0.00 avg300=0.12 total=203948727
+MemAvailable:302628 SwapTotal:2097148 SwapFree:1871372
+2026-11-24T07:15:18Z
+pid=10201 rss_kib=345996 current_bytes=454402048
+events low 0 high 443 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.85 avg60=0.75 avg300=0.41 total=359409829 full avg10=0.65 avg60=0.57 avg300=0.26 total=204497666
+MemAvailable:298208 SwapTotal:2097148 SwapFree:1868420
+2026-11-24T07:15:48Z
+pid=10201 rss_kib=350952 current_bytes=508207104
+events low 0 high 443 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.08 avg60=0.52 avg300=0.39 total=359498828 full avg10=0.07 avg60=0.40 avg300=0.25 total=204584512
+MemAvailable:298556 SwapTotal:2097148 SwapFree:1868628
+2026-11-24T07:16:18Z
+pid=10201 rss_kib=351644 current_bytes=514617344
+events low 0 high 443 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.58 avg60=0.87 avg300=0.50 total=360031650 full avg10=0.58 avg60=0.80 avg300=0.38 total=205105230
+MemAvailable:301796 SwapTotal:2097148 SwapFree:1868672
+2026-11-24T07:16:48Z
+pid=10201 rss_kib=348808 current_bytes=519274496
+events low 0 high 443 max 0 oom 0 oom_kill 0 oom_group_kill 0 sock_throttled 7655
+psi some avg10=0.02 avg60=0.52 avg300=0.45 total=360038357 full avg10=0.02 avg60=0.48 avg300=0.33 total=205110265
+MemAvailable:299732 SwapTotal:2097148 SwapFree:1869992

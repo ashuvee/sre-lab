@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 120s
+  scrape_timeout: 45s
+  evaluation_interval: 60s
+rule_files: ['/etc/prometheus/alerts.yml']
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: k3s-node
+    scheme: https
+    metrics_path: /api/v1/nodes/vm-2/proxy/metrics/cadvisor
+    bearer_token_file: /etc/prometheus/credentials/token
+    tls_config:
+      ca_file: /etc/prometheus/credentials/ca.crt
+      server_name: kubernetes
+    static_configs:
+      - targets: ['172.18.0.1:16443']

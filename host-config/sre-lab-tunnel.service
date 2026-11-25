@@ -1,0 +1,12 @@
+[Unit]
+Description=Private SRE lab telemetry tunnel
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/ssh -NT -o ExitOnForwardFailure=yes -o ServerAliveInterval=20 -o ServerAliveCountMax=3 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/home/ubuntu/.ssh/sre-lab-known-hosts -i /home/ubuntu/.ssh/sre-lab-tunnel -L 172.18.0.1:16443:127.0.0.1:6443 -R 127.0.0.1:13100:10.0.0.22:3100 ubuntu@10.0.0.206
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

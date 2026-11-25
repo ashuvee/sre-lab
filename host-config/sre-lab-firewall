@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+iptables -C DOCKER-USER -i ens3 -p tcp --dport 3100 -s 10.0.0.206 -j ACCEPT 2>/dev/null || iptables -I DOCKER-USER 1 -i ens3 -p tcp --dport 3100 -s 10.0.0.206 -j ACCEPT
+iptables -C DOCKER-USER -i ens3 -p tcp --dport 3100 -j REJECT 2>/dev/null || iptables -I DOCKER-USER 2 -i ens3 -p tcp --dport 3100 -j REJECT
+iptables -C INPUT -s 172.18.0.0/16 -d 172.18.0.1 -p tcp --dport 16443 -j ACCEPT 2>/dev/null || iptables -I INPUT 1 -s 172.18.0.0/16 -d 172.18.0.1 -p tcp --dport 16443 -j ACCEPT

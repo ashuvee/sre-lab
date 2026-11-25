@@ -1,0 +1,39 @@
+name: sre-lab
+services:
+  grafana:
+    image: grafana/grafana:12.3.4
+    restart: unless-stopped
+    ports: ['127.0.0.1:3000:3000']
+    env_file: .env
+    environment:
+      GF_ANALYTICS_REPORTING_ENABLED: 'false'
+      GF_ANALYTICS_CHECK_FOR_UPDATES: 'false'
+      GF_ALERTING_ENABLED: 'false'
+      GF_UNIFIED_ALERTING_ENABLED: 'false'
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./provisioning:/etc/grafana/provisioning:ro
+      - ./dashboards:/var/lib/grafana/dashboards:ro
+  prometheus:
+    image: prom/prometheus:v3.9.1
+    profiles: [metrics]
+    restart: unless-stopped
+    command: ['--config.file=/etc/prometheus/prometheus.yml', '--storage.tsdb.path=/prometheus', '--storage.tsdb.retention.time=24h', '--storage.tsdb.retention.size=1GB', '--web.listen-address=0.0.0.0:9090']
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./alerts.yml:/etc/prometheus/alerts.yml:ro
+      - ./credentials:/etc/prometheus/credentials:ro
+      - prometheus-data:/prometheus
+  loki:
+    image: grafana/loki:3.6.4
+    profiles: [logging]
+    restart: unless-stopped
+    command: ['-config.file=/etc/loki/config.yml']
+    ports: ['10.0.0.22:3100:3100']
+    volumes:
+      - ./loki.yml:/etc/loki/config.yml:ro
+      - loki-data:/loki
+volumes:
+  grafana-data:
+  prometheus-data:
+  loki-data:

@@ -1,0 +1,3 @@
+kube-apiserver-arg:
+  - max-requests-inflight=50
+  - max-mutating-requests-inflight=25

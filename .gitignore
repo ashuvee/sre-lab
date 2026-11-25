@@ -1,0 +1,20 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+**/credentials/
+**/secrets/
+.kube/
+kubeconfig
+*.kubeconfig
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.token
+
+# Local tooling
+.DS_Store
+node_modules/
